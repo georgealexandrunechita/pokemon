@@ -1,0 +1,99 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(189, 226, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Usar min-height para asegurar que el diseño funcione en scroll */
+    margin: 0; /* Asegura que no haya margen predeterminado en el body */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #dbe4e5;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(26, 18, 99, 0.5); /* Mejor uso de transparencia */
+    text-align: center;
+    border-radius: 10px;
+    max-width: 400px; /* Restringir el ancho para mejor diseño en pantallas grandes */
+    width: 100%; /* Asegurar que se adapte a pantallas pequeñas */
+}
+
+/* Título principal */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(26, 18, 99); /* Mejor contraste */
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campo de entrada */
+input {
+    padding: 10px; /* Más espacio para mayor comodidad */
+    margin-bottom: 20px;
+    border: 1px solid rgb(106, 97, 185);
+    border-radius: 5px;
+    font-size: 14px; /* Asegurar tamaño legible */
+}
+
+/* Botón */
+button {
+    padding: 10px;
+    background-color: rgb(35, 35, 218);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px; /* Más amplio para mejor interacción */
+    display: block;
+    margin: 0 auto;
+    font-size: 14px; /* Legibilidad */
+}
+
+button:hover {
+    background-color: rgb(65, 65, 69);
+    transition: background-color 0.3s ease; /* Animación suave */
+}
+
+/* Información del Pokémon */
+.pokemon-info {
+    margin-top: 20px;
+    display: none; /* Oculto por defecto */
+}
+
+/* Imagen del Pokémon */
+.pokemon-info img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid rgb(138, 138, 175); /* Mejor diseño con un borde */
+}
+
+/* Nombre del Pokémon */
+.pokemon-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(32, 25, 95); /* Mejor contraste */
+}
+
+/* Descripción del Pokémon */
+.pokemon-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: rgb(45, 45, 45); /* Texto oscuro para mejor contraste */
+}

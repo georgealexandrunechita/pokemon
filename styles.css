@@ -8,7 +8,10 @@
 /* Estilo general del cuerpo */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(189, 226, 227);
+    background-image: url('pokemon-party.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +21,7 @@ body {
 
 /* Contenedor principal */
 .container {
-    background-color: #dbe4e5;
+    background-color: rgba(219, 228, 229, 0.9); /* Fondo translúcido para el contenedor */
     padding: 40px;
     box-shadow: 0 4px 10px rgba(26, 18, 99, 0.5); /* Mejor uso de transparencia */
     text-align: center;
